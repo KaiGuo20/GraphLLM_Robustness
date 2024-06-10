@@ -24,7 +24,7 @@ from peft import LoraConfig
 from trl import SFTTrainer
 from args import *
 import wandb
-wandb.login(key="8ae79e5dfdfb05a0b5ec9ae46781aad4ef68cd55")
+wandb.login(key="your key")
 
 args = get_command_line_args()
 base_model_name = "meta-llama/Llama-2-7b-hf"
@@ -100,7 +100,7 @@ device_map="auto"
 
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_name,
-    token='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',
+    token='your key of hf',
     quantization_config=bnb_config,
     device_map=device_map,
     trust_remote_code=True,

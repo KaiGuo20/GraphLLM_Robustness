@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f948a57b-6f6b-48a6-8d23-4cd030252aab" name="hpcc" url="http://guokai1@hpcc.msu.edu">
+        <fileTransfer host="guokai1@hpcc.msu.edu" port="22" privateKey="C:\GNN_CODE\密钥\id_rsa" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
