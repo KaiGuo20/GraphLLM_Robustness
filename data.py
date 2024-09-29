@@ -751,7 +751,7 @@ def get_llama_ft_embedding(texts):
     tokenizer = AutoTokenizer.from_pretrained(base_model_id, add_bos_token=True, trust_remote_code=True)
     from peft import PeftModel
 
-    ft_model = PeftModel.from_pretrained(base_model, "/mnt/home/guokai1/workspace/Graph-LLM/results/wikics/checkpoint-500")
+    ft_model = PeftModel.from_pretrained(base_model, "your path")
     print(ft_model)
     embeddings = []
     tokenizer.pad_token = tokenizer.eos_token
